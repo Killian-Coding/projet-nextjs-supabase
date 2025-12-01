@@ -1,37 +1,48 @@
 ### Killian 
 
-**Tâches réalisées:**
-- Mise en place CRUD tâches avec Supabase (Server Actions)
+**Semaine 1 – Setup & Design System:**
+- Clonage et installation du projet
 
-- Types TypeScript pour les tâches
+- Configuration .env.local pour Supabase
 
-- Page TaskList avec affichage et gestion temps réel
+- Test du projet sur http://localhost:3000/tasks
 
-- Validation du fonctionnement backend
+- Création des composants UI : Button, Card, Input, Textarea
 
-**Apprentissages avec l'IA:**
+- Commit : feat: create UI design system components
 
-revalidatePath() force le rafraîchissement après mutation
+**Semaine 2 – Formulaire & Interface principale:**
 
-createServerClient vs createBrowserClient pour sécuriser les appels
+Création du formulaire TaskForm pour ajouter des tâches
 
-Importance des types explicites pour éviter les erreurs TypeScript
+Création des cartes TaskCard pour gérer état et suppression
+
+Création de la liste TaskList pour afficher les tâches par statut
+
+Page principale tasks/page.tsx intégrant formulaire et liste
+
+Gestion des erreurs et validations côté client
+
+Commit : feat: complete task UI with forms and cards
+
+**Semaine 3 – Realtime & Animations:**
+- Implémentation du temps réel avec Supabase Realtime
+
+- Mise à jour automatique des listes lors d’insertion, modification et suppression
+
+- Indicateur de connexion realtime (Live / Connexion)
+
+- Commit : feat: implement Supabase Realtime subscriptions
+**Apprentissages principaux:**
+- Gestion des Server Actions CRUD et validation côté client
+
+- revalidatePath() pour forcer le rafraîchissement des données
+
+- Importance des types TypeScript pour éviter erreurs
 
 **Difficultés rencontrées:**
-cookies() nécessite await dans Next.js 15
+- Types TypeScript pour Supabase
 
-Indexation des tableaux et états dans TypeScript
+- Realtime : gérer l’état et le mapping des événements correctement
 
-Realtime Supabase et types payload
-**Réflexion sur l'IA:**
-- **Forces:** Excellente pour nouvelles APIs Next.js 15. Évité heures de lecture docs.
-- **Limites:** Exemple avec ancienne syntaxe cookies() (sans await). Dû checker doc officielle.
-
-**Objectifs semaine prochaine:**
-- Aider à l’intégration UI
-
-- Ajouter tests unitaires
-
-- Optimiser backend et SQL
-
-**Temps passé:** ~3-4 heures
+**Temps passé:** ~7-8 heures
