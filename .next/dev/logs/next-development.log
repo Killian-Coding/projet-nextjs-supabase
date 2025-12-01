@@ -1,0 +1,245 @@
+[00:00:11.777] Server  LOG      ✓ Ready in 9.2s
+[00:00:16.015] Server  LOG      ○ Compiling /_not-found/page ...
+[00:00:35.269] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:38.847] Server  LOG      ✓ Compiled in 155ms
+[00:06:52.338] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:08:19.337] Server  ERROR   C:\Users\lenovo\OneDrive - Cegep de Sherbrooke\Bureau\SESSION 5\projet-nextjs-supabase\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:08:19.652] Server  ERROR   C:\Users\lenovo\OneDrive - Cegep de Sherbrooke\Bureau\SESSION 5\projet-nextjs-supabase\.next\dev\server\chunks\ssr\node_modules_next_dist_1c1942b9._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:08:19.669] Server  ERROR   C:\Users\lenovo\OneDrive - Cegep de Sherbrooke\Bureau\SESSION 5\projet-nextjs-supabase\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:08:19.745] Server  ERROR   C:\Users\lenovo\OneDrive - Cegep de Sherbrooke\Bureau\SESSION 5\projet-nextjs-supabase\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:08:19.779] Server  ERROR   C:\Users\lenovo\OneDrive - Cegep de Sherbrooke\Bureau\SESSION 5\projet-nextjs-supabase\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:08:19.795] Server  ERROR   C:\Users\lenovo\OneDrive - Cegep de Sherbrooke\Bureau\SESSION 5\projet-nextjs-supabase\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:08:19.810] Server  ERROR   C:\Users\lenovo\OneDrive - Cegep de Sherbrooke\Bureau\SESSION 5\projet-nextjs-supabase\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:08:19.817] Server  ERROR   C:\Users\lenovo\OneDrive - Cegep de Sherbrooke\Bureau\SESSION 5\projet-nextjs-supabase\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:08:19.844] Server  ERROR    ⨯ Error: The default export is not a React Component in "/layout"
+[00:08:19.872] Server  ERROR   C:\Users\lenovo\OneDrive - Cegep de Sherbrooke\Bureau\SESSION 5\projet-nextjs-supabase\node_modules\next\dist\compiled\next-server\app-page-turbo.runtime.dev.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:08:19.874] Server  ERROR   C:\Users\lenovo\OneDrive - Cegep de Sherbrooke\Bureau\SESSION 5\projet-nextjs-supabase\.next\dev\server\chunks\ssr\node_modules_next_dist_1c1942b9._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:08:19.878] Server  ERROR   C:\Users\lenovo\OneDrive - Cegep de Sherbrooke\Bureau\SESSION 5\projet-nextjs-supabase\node_modules\next\dist\server\base-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:08:19.884] Server  ERROR   C:\Users\lenovo\OneDrive - Cegep de Sherbrooke\Bureau\SESSION 5\projet-nextjs-supabase\node_modules\next\dist\server\next-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:08:19.905] Server  ERROR   C:\Users\lenovo\OneDrive - Cegep de Sherbrooke\Bureau\SESSION 5\projet-nextjs-supabase\node_modules\next\dist\server\dev\next-dev-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:08:19.908] Server  ERROR   C:\Users\lenovo\OneDrive - Cegep de Sherbrooke\Bureau\SESSION 5\projet-nextjs-supabase\node_modules\next\dist\trace\trace.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:08:19.920] Server  ERROR   C:\Users\lenovo\OneDrive - Cegep de Sherbrooke\Bureau\SESSION 5\projet-nextjs-supabase\node_modules\next\dist\server\lib\router-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:08:19.936] Server  ERROR   C:\Users\lenovo\OneDrive - Cegep de Sherbrooke\Bureau\SESSION 5\projet-nextjs-supabase\node_modules\next\dist\server\lib\start-server.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:08:19.939] Server  ERROR    ⨯ Error: The default export is not a React Component in "/layout"
+[00:08:19.974] Server  LOG      ✓ Compiled in 1118ms
+[00:08:22.973] Server  LOG      ○ Compiling /_error ...
+[00:08:34.229] Server  ERROR    ⨯ ./app/layout.tsx:2:1
+Module not found: Can't resolve './globals.css'
+  1 | // app/layout.tsx
+> 2 | import "./globals.css"; // si tu as un CSS global
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export const metadata = {
+  5 |   title: "Tasks App",
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:35.067] Server  ERROR    ⨯ ./app/layout.tsx:2:1
+Module not found: Can't resolve './globals.css'
+  1 | // app/layout.tsx
+> 2 | import "./globals.css"; // si tu as un CSS global
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export const metadata = {
+  5 |   title: "Tasks App",
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:38.756] Browser ERROR   uncaughtError: Error: The default export is not a React Component in "/layout"
+[00:08:38.889] Browser ERROR   ./app/layout.tsx:2:1
+Module not found: Can't resolve './globals.css'
+  1 | // app/layout.tsx
+> 2 | import "./globals.css"; // si tu as un CSS global
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export const metadata = {
+  5 |   title: "Tasks App",
+
+https://nextjs.org/docs/messages/module-not-found
+[00:08:38.889] Browser ERROR   ./app/layout.tsx:2:1
+Module not found: Can't resolve './globals.css'
+  1 | // app/layout.tsx
+> 2 | import "./globals.css"; // si tu as un CSS global
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export const metadata = {
+  5 |   title: "Tasks App",
+
+https://nextjs.org/docs/messages/module-not-found
+[00:08:39.535] Browser ERROR   ./app/layout.tsx:2:1
+Module not found: Can't resolve './globals.css'
+  1 | // app/layout.tsx
+> 2 | import "./globals.css"; // si tu as un CSS global
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export const metadata = {
+  5 |   title: "Tasks App",
+
+https://nextjs.org/docs/messages/module-not-found
+[00:08:41.739] Server  ERROR    ⨯ ./app/layout.tsx:2:1
+Module not found: Can't resolve './globals.css'
+  1 | // app/layout.tsx
+> 2 | import "./globals.css"; // si tu as un CSS global
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export const metadata = {
+  5 |   title: "Tasks App",
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:43.417] Browser ERROR   ./app/layout.tsx:2:1
+Module not found: Can't resolve './globals.css'
+  1 | // app/layout.tsx
+> 2 | import "./globals.css"; // si tu as un CSS global
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export const metadata = {
+  5 |   title: "Tasks App",
+
+https://nextjs.org/docs/messages/module-not-found
+[00:08:46.531] Browser ERROR   uncaughtError: Error: ./app/layout.tsx:2:1
+Module not found: Can't resolve './globals.css'
+  1 | // app/layout.tsx
+> 2 | import "./globals.css"; // si tu as un CSS global
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export const metadata = {
+  5 |   title: "Tasks App",
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:08:46.660] Browser ERROR   ./app/layout.tsx:2:1
+Module not found: Can't resolve './globals.css'
+  1 | // app/layout.tsx
+> 2 | import "./globals.css"; // si tu as un CSS global
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export const metadata = {
+  5 |   title: "Tasks App",
+
+https://nextjs.org/docs/messages/module-not-found
+[00:08:46.660] Browser ERROR   ./app/layout.tsx:2:1
+Module not found: Can't resolve './globals.css'
+  1 | // app/layout.tsx
+> 2 | import "./globals.css"; // si tu as un CSS global
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export const metadata = {
+  5 |   title: "Tasks App",
+
+https://nextjs.org/docs/messages/module-not-found
+[00:08:46.845] Browser ERROR   ./app/layout.tsx:2:1
+Module not found: Can't resolve './globals.css'
+  1 | // app/layout.tsx
+> 2 | import "./globals.css"; // si tu as un CSS global
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export const metadata = {
+  5 |   title: "Tasks App",
+
+https://nextjs.org/docs/messages/module-not-found
+[00:09:10.553] Server  LOG      ✓ Compiled in 3.9s
+[00:09:17.567] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:35.299] Server  ERROR    ⨯ ./app/layout.tsx:2:1
+Module not found: Can't resolve './globals.css'
+  1 | // app/layout.tsx
+> 2 | import "./globals.css"; // si tu as un CSS global
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export const metadata = {
+  5 |   title: "Tasks App",
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:09:35.317] Server  ERROR    ⨯ ./app/layout.tsx:2:1
+Module not found: Can't resolve './globals.css'
+  1 | // app/layout.tsx
+> 2 | import "./globals.css"; // si tu as un CSS global
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export const metadata = {
+  5 |   title: "Tasks App",
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:09:35.322] Server  ERROR    ⨯ ./app/layout.tsx:2:1
+Module not found: Can't resolve './globals.css'
+  1 | // app/layout.tsx
+> 2 | import "./globals.css"; // si tu as un CSS global
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export const metadata = {
+  5 |   title: "Tasks App",
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:09:35.402] Server  ERROR    ⨯ ./app/layout.tsx:2:1
+Module not found: Can't resolve './globals.css'
+  1 | // app/layout.tsx
+> 2 | import "./globals.css"; // si tu as un CSS global
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export const metadata = {
+  5 |   title: "Tasks App",
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:09:35.428] Server  ERROR    ⨯ ./app/layout.tsx:2:1
+Module not found: Can't resolve './globals.css'
+  1 | // app/layout.tsx
+> 2 | import "./globals.css"; // si tu as un CSS global
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export const metadata = {
+  5 |   title: "Tasks App",
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+[00:09:36.135] Browser ERROR   ./app/layout.tsx:2:1
+Module not found: Can't resolve './globals.css'
+  1 | // app/layout.tsx
+> 2 | import "./globals.css"; // si tu as un CSS global
+    | ^^^^^^^^^^^^^^^^^^^^^^^
+  3 |
+  4 | export const metadata = {
+  5 |   title: "Tasks App",
+
+https://nextjs.org/docs/messages/module-not-found
+[00:09:42.277] Server  LOG      ✓ Compiled in 367ms
+[00:09:43.930] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:49.604] Server  LOG      ✓ Compiled in 103ms
+[00:09:52.054] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:09:57.433] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:11:14.408] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:11:57.673] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:12:16.144] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:18:24.801] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:18:38.670] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:47:24.494] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
