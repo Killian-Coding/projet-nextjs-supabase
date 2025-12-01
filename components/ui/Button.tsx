@@ -5,14 +5,14 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   size?: 'sm' | 'md' | 'lg'
 }
 
-export default function Button({
-  children,
+export default function Button({ 
+  children, 
   variant = 'primary',
   size = 'md',
   className = '',
-  ...props
+  ...props 
 }: ButtonProps) {
-  const baseStyles = 'rounded-lg font-medium transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed'
+  const baseStyles = 'rounded-lg font-medium transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-offset-1'
 
   const variants = {
     primary: 'bg-blue-600 text-white hover:bg-blue-700 active:bg-blue-800',
@@ -27,7 +27,7 @@ export default function Button({
   }
 
   return (
-    <button
+    <button 
       className={`${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`}
       {...props}
     >
