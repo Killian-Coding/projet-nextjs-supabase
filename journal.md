@@ -42,4 +42,38 @@
 - Documentation technique backend
 - Optimisation requêtes SQL
 
-**Temps passé:** ~6 heures
+### [Date semaine 3]
+
+**Tâches réalisées:**
+- Installation et configuration Jest
+- Création de 3 tests unitaires pour Server Actions
+- Rédaction documentation technique complète (BACKEND.md)
+- Aide à Killian pour intégration UI
+- Review du code frontend
+
+**Apprentissages avec l'IA:**
+
+*Prompt 1:* "Comment tester des Server Actions Next.js 15 avec Jest?"
+- **Apprentissage:** Besoin de mocker Supabase client pour tests isolés. Version simplifiée suffit pour démo.
+
+*Prompt 2:* "Structure idéale pour documenter une API backend moderne?"
+- **Apprentissage:** Inclure: architecture, exemples code, apprentissages, améliorations futures.
+
+*Prompt 3:* "Optimisations PostgreSQL pour app temps réel?"
+- **Apprentissage:** Index sur colonnes triées (created_at), RLS policies efficaces.
+
+**Difficultés rencontrées:**
+- Tests avec vraie DB vs mocks
+  - **Solution:** Utilisé tests basiques sur vraie DB. IA suggéré mocks pour production.
+
+- Documentation trop technique au début
+  - **Solution:** IA aidé simplifier avec exemples concrets
+
+**Réflexion sur l'IA:**
+- **Forces:** Excellente pour structure documentation, exemples tests
+- **Limites:** Suggéré setup complexe Jest. Simplifié manuellement.
+
+**Objectifs semaine prochaine:**
+- Finaliser déploiement Vercel
+- Préparer section backend rapport final
+- Répéter démo avec Killian

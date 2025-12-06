@@ -4,6 +4,8 @@ import { createServerSupabase } from '@/lib/supabase/server'
 import { revalidatePath } from 'next/cache'
 import type { Task, TaskStatus } from '@/lib/types'
 
+
+
 /**
  * Récupère toutes les tâches
  */
@@ -83,10 +85,8 @@ const supabase = await createServerSupabase()
 /**
  * Supprime une tâche
  */
-export async function deleteTask(formData: FormData) {
+export async function deleteTask(id: string) {
   const supabase = await createServerSupabase()
-
-  const id = formData.get("id") as string
 
   const { error } = await supabase
     .from("tasks")
