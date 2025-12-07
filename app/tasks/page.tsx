@@ -1,4 +1,4 @@
-import { getTasks } from '@/app/actions/tasks'
+import { getTasks } from '@/app/task'
 import TaskForm from './TaskForm'
 import TaskList from './TaskList'
 

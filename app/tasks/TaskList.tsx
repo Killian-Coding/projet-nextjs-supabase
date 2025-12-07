@@ -1,19 +1,19 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { Task } from '@/lib/types'
+import { Task, TaskStatus } from '@/lib/types'
 import TaskCard from './TaskCard'
-import { supabase } from '@/lib/supabaseClient'
-
-type Status = 'todo' | 'in_progress' | 'done'
+import { createClient } from '@/lib/supabase/client'
 
 interface TaskListProps {
   initialTasks: Task[]
 }
 
+// ← IMPORTANT : export default
 export default function TaskList({ initialTasks }: TaskListProps) {
   const [tasks, setTasks] = useState<Task[]>(initialTasks)
   const [isConnected, setIsConnected] = useState(false)
+  const supabase = createClient()
 
   useEffect(() => {
     const channel = supabase
@@ -21,7 +21,7 @@ export default function TaskList({ initialTasks }: TaskListProps) {
       .on(
         'postgres_changes',
         { event: '*', schema: 'public', table: 'tasks' },
-        (payload: any) => {  // ici on met any pour simplifier le type
+        (payload: any) => {
           if (payload.eventType === 'INSERT') {
             setTasks(prev => [payload.new as Task, ...prev])
           } else if (payload.eventType === 'UPDATE') {
@@ -40,19 +40,18 @@ export default function TaskList({ initialTasks }: TaskListProps) {
     return () => {
       supabase.removeChannel(channel)
     }
-  }, [])
+  }, [supabase])
 
-  const tasksByStatus: Record<Status, Task[]> = {
+  const tasksByStatus: Record<TaskStatus, Task[]> = {
     todo: tasks.filter(t => t.status === 'todo'),
     in_progress: tasks.filter(t => t.status === 'in_progress'),
     done: tasks.filter(t => t.status === 'done')
   }
 
-  const statuses: Status[] = ['todo', 'in_progress', 'done']
+  const statuses: TaskStatus[] = ['todo', 'in_progress', 'done']
 
   return (
     <div className="space-y-8">
-      {/* Indicateur de connexion */}
       <div
         className={`flex items-center gap-2 px-4 py-2 rounded-lg ${
           isConnected ? 'bg-green-50 text-green-700' : 'bg-gray-50 text-gray-600'

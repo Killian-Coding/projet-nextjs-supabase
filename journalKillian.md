@@ -9,7 +9,6 @@
 
 - Création des composants UI : Button, Card, Input, Textarea
 
-- Commit : feat: create UI design system components
 
 **Semaine 2 – Formulaire & Interface principale:**
 
@@ -23,7 +22,6 @@ Page principale tasks/page.tsx intégrant formulaire et liste
 
 Gestion des erreurs et validations côté client
 
-Commit : feat: complete task UI with forms and cards
 
 **Semaine 3 – Realtime & Animations:**
 - Implémentation du temps réel avec Supabase Realtime
@@ -32,7 +30,14 @@ Commit : feat: complete task UI with forms and cards
 
 - Indicateur de connexion realtime (Live / Connexion)
 
-- Commit : feat: implement Supabase Realtime subscriptions
+
+
+**Semaine 4 – Finalisation, tests & préparation remise :**
+- Vérification complète du fonctionnement de l’application (ajout, suppression, mise à jour des tâches)
+- Tests du Realtime Supabase en conditions réelles (multi-onglets)
+- Corrections de bugs mineurs d’affichage et d’état
+- Préparation de la démonstration finale
+
 **Apprentissages principaux:**
 - Gestion des Server Actions CRUD et validation côté client
 
