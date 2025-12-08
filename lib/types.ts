@@ -8,4 +8,4 @@ export type Task = {
 }
 
 // Définir et exporter TaskStatus
-export type TaskStatus = 'todo' | 'in-progress' | 'done';
+export type TaskStatus = 'todo' | 'in_progress' | 'done';

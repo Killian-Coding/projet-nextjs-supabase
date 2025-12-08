@@ -1,6 +1,6 @@
 'use client'
 
-import { createTask } from '@/app/task'
+import { createTask } from '@/app/actions/task'
 import { useState } from 'react'
 import Button from '@/components/ui/Button'
 import Input from '@/components/ui/Input'
@@ -27,12 +27,12 @@ export default function TaskForm() {
   
   return (
     <Card className="p-6">
-      <h2 className="text-xl font-semibold mb-4 text-gray-900">✨ Créer une nouvelle tâche</h2>
+      <h2 className="text-xl font-semibold mb-4 text-gray-900">Créer une nouvelle tâche</h2>
       <form id="task-form" action={handleSubmit} className="space-y-4">
         <Input type="text" name="title" label="Titre" placeholder="Ex: Finaliser le rapport" required disabled={isSubmitting} />
         <Textarea name="description" label="Description (optionnel)" rows={3} placeholder="Détails..." disabled={isSubmitting} />
         {error && <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg">{error}</div>}
-        <Button type="submit" disabled={isSubmitting} className="w-full">{isSubmitting ? '⏳ Création...' : '➕ Créer la tâche'}</Button>
+        <Button type="submit" disabled={isSubmitting} className="w-full">{isSubmitting ? 'Création...' : ' Créer la tâche'}</Button>
       </form>
     </Card>
   )

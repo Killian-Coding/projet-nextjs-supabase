@@ -3,17 +3,22 @@
 import { useEffect, useState } from 'react'
 import { Task, TaskStatus } from '@/lib/types'
 import TaskCard from './TaskCard'
-import { createClient } from '@/lib/supabase/client'
+import { createClient } from '@supabase/supabase-js'
+
+const supabase = createClient(
+  process.env.NEXT_PUBLIC_SUPABASE_URL!,
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+)
+
+type Status = 'todo' | 'in_progress' | 'done'  
 
 interface TaskListProps {
   initialTasks: Task[]
 }
 
-// ← IMPORTANT : export default
 export default function TaskList({ initialTasks }: TaskListProps) {
   const [tasks, setTasks] = useState<Task[]>(initialTasks)
   const [isConnected, setIsConnected] = useState(false)
-  const supabase = createClient()
 
   useEffect(() => {
     const channel = supabase
@@ -40,30 +45,27 @@ export default function TaskList({ initialTasks }: TaskListProps) {
     return () => {
       supabase.removeChannel(channel)
     }
-  }, [supabase])
+  }, [])
 
   const tasksByStatus: Record<TaskStatus, Task[]> = {
     todo: tasks.filter(t => t.status === 'todo'),
-    in_progress: tasks.filter(t => t.status === 'in_progress'),
+    in_progress: tasks.filter(t => t.status === 'in_progress'),  
     done: tasks.filter(t => t.status === 'done')
   }
 
-  const statuses: TaskStatus[] = ['todo', 'in_progress', 'done']
+  const statuses: Status[] = ['todo', 'in_progress', 'done']  
 
   return (
     <div className="space-y-8">
-      <div
-        className={`flex items-center gap-2 px-4 py-2 rounded-lg ${
-          isConnected ? 'bg-green-50 text-green-700' : 'bg-gray-50 text-gray-600'
-        }`}
-      >
-        <span
-          className={`w-2 h-2 rounded-full ${
-            isConnected ? 'bg-green-500 animate-pulse' : 'bg-gray-400'
-          }`}
-        />
+      {/* Indicateur de connexion */}
+      <div className={`flex items-center gap-2 px-4 py-2 rounded-lg ${
+        isConnected ? 'bg-green-50 text-green-700' : 'bg-gray-50 text-gray-600'
+      }`}>
+        <span className={`w-2 h-2 rounded-full ${
+          isConnected ? 'bg-green-500 animate-pulse' : 'bg-gray-400'
+        }`} />
         <span className="text-sm font-medium">
-          {isConnected ? '🔴 Live - Mises à jour en temps réel' : '⏳ Connexion...'}
+          {isConnected ? 'Live - Mises à jour en temps réel' : 'Connexion...'}
         </span>
       </div>
 
@@ -71,10 +73,10 @@ export default function TaskList({ initialTasks }: TaskListProps) {
         <div key={status}>
           <h2 className="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
             {status === 'todo'
-              ? '📝 À faire'
-              : status === 'in_progress'
-              ? '⚡ En cours'
-              : '✅ Terminé'}
+              ? 'À faire'
+              : status === 'in_progress'  
+              ? 'En cours'
+              : 'Terminé'}
             <span className="text-sm font-normal text-gray-500">
               ({tasksByStatus[status].length})
             </span>
