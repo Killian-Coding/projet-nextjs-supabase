@@ -68,7 +68,6 @@ export async function updateTaskStatus(id: string, status: TaskStatus) {
   revalidatePath('/tasks')
 }
 
-// ← CORRECTION ICI : accepte un string, pas un FormData
 export async function deleteTask(id: string) {
   const supabase = await createServerSupabase()
   
