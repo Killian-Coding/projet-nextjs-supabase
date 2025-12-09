@@ -6,8 +6,8 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Votre Application',
-  description: 'Description de votre application',
+  title: 'Gestionnaire de Tâches',
+  description: 'Création de tâches et suivi de leur progression',
 }
 
 export default function RootLayout({
